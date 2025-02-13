@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin vs Padding</title>
+    <style>
+
+        /*
+        5. What's the difference between margin and padding?
+        
+        */
+
+        /*
+
+
+        Margin → Moves elements apart (outside the border).
+        Padding → Increases space inside an element (inside the border).
+        Margins can collapse (e.g., two 20px top margins might become 20px, not 40px).
+        Padding does not collapse and always adds space inside the element.
+
+
+        */
+
+
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            width: 200px;
+            text-align: center;
+            border: 2px solid black;
+            margin: 20px; /* Space outside */
+            padding: 10px; /* Space inside */
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div>This box has margin & padding</div>
+
+</body>
+</html>

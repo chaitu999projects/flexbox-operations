@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements - Box Model</title>
+    <style>
+
+        /*
+
+        9. What's the difference between block and inline elements regarding the box model?
+        
+        */
+        .block {
+            display: block;
+            width: 300px;
+            padding: 20px;
+            margin: 10px 0;
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+
+        .inline {
+            display: inline;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: lightcoral;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Block vs Inline Elements (Box Model)</h2>
+
+    <h3>Block Element Example (Takes Full Width)</h3>
+    <div class="block">I am a block element (div)</div>
+    <p class="block">I am also a block element (p)</p>
+
+    <h3>Inline Element Example (Only as Wide as Content)</h3>
+    <p>This is <span class="inline">an inline element</span> inside a sentence.</p>
+    <p>Another <span class="inline">inline element</span> in action.</p>
+
+    <h3>Inline-Block Example (Respects Width & Height)</h3>
+    <p>
+        <span class="inline-block">I am inline-block</span>
+        <span class="inline-block">Me too!</span>
+    </p>
+
+</body>
+</html>

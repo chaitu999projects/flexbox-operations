@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin & Padding Example</title>
+    <style>
+
+        /*
+        4.How do you set different values for each side of an element using
+        margin/padding?
+        */
+
+        /*
+        <!-- In this example, we have four different boxes with different margin and padding values. -->
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        section{
+            width: 400px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        /* Using separate properties */
+        .separate {
+            background-color: lightblue;
+            margin-top: 10px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+            margin-left: 25px;
+
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        /* Using shorthand notation */
+        .shorthand {
+            background-color: lightgreen;
+            margin: 10px 15px 20px 25px; /* Top Right Bottom Left */
+            padding: 5px 10px 15px 20px; /* Top Right Bottom Left */
+        }
+
+        /* Two-value shorthand */
+        .two-values {
+            background-color: lightcoral;
+            margin: 10px 20px; /* Top & Bottom = 10px, Left & Right = 20px */
+            padding: 5px 15px; /* Top & Bottom = 5px, Left & Right = 15px */
+        }
+
+        /* Three-value shorthand */
+        .three-values {
+            background-color: lightgoldenrodyellow;
+            margin: 10px 15px 20px; /* Top = 10px, Left & Right = 15px, Bottom = 20px */
+            padding: 5px 10px 15px; /* Top = 5px, Left & Right = 10px, Bottom = 15px */
+        }
+
+        .box {
+            width: 200px;
+            text-align: center;
+            border: 2px solid black;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Margin & Padding Examples</h2>
+
+        <div class="box separate">Separate Properties</div>
+        <div class="box shorthand">Shorthand Notation</div>
+        <div class="box two-values">Two Values</div>
+        <div class="box three-values">Three Values</div>
+    </section>
+
+</body>
+</html>

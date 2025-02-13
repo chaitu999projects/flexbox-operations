@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width 100% with Padding</title>
+    <style>
+
+        /*
+        8. What happens when you set the width: to 100% with padding?
+        
+        */
+        div {
+            width: 300px;
+            background-color: lightgray;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        /* This box overflows */
+        .box1 {
+            width: 100%;
+            padding: 20px;
+            background-color: lightcoral;
+        }
+
+        /* This box fits perfectly */
+        .box2 {
+            width: 100%;
+            padding: 20px;
+            background-color: lightblue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="box1">🚨 Overflowing Box</div>
+    </div>
+
+    <div>
+        <div class="box2">✅ Fixed with Border-Box</div>
+    </div>
+
+</body>
+</html>

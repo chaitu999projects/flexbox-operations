@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Challenges</title>
+    <style>
+
+
+        /*
+             10. Coding challenge:
+            - Create a card with proper spacing using box model properties
+             - Fix a layout where margins are collapsing unexpectedly
+            - Center a div both vertically and horizontally
+        
+        */
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+
+        /* 1️ Card with Proper Spacing */
+        .card {
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px black;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        /* 2️ Fixing Margin Collapse */
+        .container {
+            background-color: lightblue;
+            padding: 20px;
+            overflow: hidden; /* Fix for margin collapse */
+            width: 320px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .box {
+            background-color: lightcoral;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        /* 3️ Centering a Div Vertically & Horizontally */
+        .center-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            background-color: lightgreen;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .center-box {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Card with Proper Spacing -->
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>This is a well-spaced card using Box Model properties.</p>
+        <button>Learn More</button>
+    </div>
+
+    <!-- Fixing Margin Collapse -->
+    <div class="container">
+        <div class="box">Box 1 (Fixing Margin Collapse)</div>
+        <div class="box">Box 2</div>
+    </div>
+
+    <!-- Centering a Div -->
+    <div class="center-wrapper">
+        <div class="center-box">Centered!</div>
+    </div>
+
+</body>
+</html>

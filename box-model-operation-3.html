@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negative Margin & Box-Sizing Example</title>
+    <style>
+
+        /*
+        
+        3.What is box-sizing property and what are its values?
+        
+        */
+
+
+
+
+        /*
+        The box-sizing property in CSS defines how the total width and height of an element are calculated, including padding and borders.
+        */
+        /* Global box-sizing to avoid unexpected layout issues */
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        /* Default content-box behavior */
+        .content-box {
+            width: 150px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            background-color: lightgreen;
+            margin: 20px auto;
+        }
+
+        /* border-box: Padding and border included in width & height */
+        .border-box {
+            width: 150px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            background-color: lightblue;
+            box-sizing: border-box;
+            margin: 20px auto;
+        }
+
+        /* Negative margin example */
+        .negative-margin {
+            margin-top: -30px; /* Moves up by 30px */
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Box-Sizing & Negative Margin Example</h2>
+
+        <div class="content-box">Content-Box</div>
+        <div class="border-box">Border-Box</div>
+
+        <h3>Negative Margin Example</h3>
+        <div class="content-box">Box 1</div>
+        <div class="content-box negative-margin">Negative Margin</div>
+        <div class="content-box">Box 3</div>
+    </section>
+
+</body>
+</html>

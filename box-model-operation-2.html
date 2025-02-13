@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negative Margin Example</title>
+    <style>
+
+        /*
+        
+        2. How do negative margins work and when might you use them?
+        
+        */
+        section {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px auto;
+            line-height: 100px;
+            font-weight: bold;
+        }
+        .negative-margin {
+            margin-top: -30px; /* Moves the element upwards */
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- margin-top: -10px; → Moves the element upward by 10 pixels.
+    margin-right: -10px; → Pulls the element closer to the left.
+    margin-bottom: -10px; → Moves the element upward, overlapping with the one below.
+    margin-left: -10px; → Pulls the element closer to the right. -->
+
+
+    <section>
+        <div class="box">Box 1</div>
+        <div class="box negative-margin">Negative Margin</div>
+        <div class="box">Box 3</div>
+    </section>
+</body>
+</html>
